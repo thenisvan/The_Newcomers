@@ -19,7 +19,7 @@ argparser.add_argument(
     help='path to configuration file')
 
 def _main_(args):
-    config_path = args.conf
+    config_path = "config.json"#args.conf
 
     with open(config_path) as config_buffer:    
         config = json.loads(config_buffer.read())
