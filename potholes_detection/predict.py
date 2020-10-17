@@ -32,9 +32,9 @@ argparser.add_argument(
     help='path to an image or an video (mp4 format)')
 
 def _main_(args):
-    config_path  = "D:\KOPka\The_Newcomers-master\potholes_detection\config.json" #args.conf
-    weights_path = "D:\KOPka\The_Newcomers-master\potholes_detection\trained_wts.h5" #args.weights
-    image_path   = "D:\KOPka\The_Newcomers-master\potholes_detection\dashcam.mp4" #args.input
+    config_path  = "config.json" #args.conf
+    weights_path = args.weights
+    image_path   = args.input
 
     with open(config_path) as config_buffer:    
         config = json.load(config_buffer)
